@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Fixed style for h1 */
+    h1 {
+        color: red;
+    }
+
+    .fixed-h1 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        color: red; /* Adjust the color as needed */
+    }
+
+    /* Carousel item styles */
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    /* ... (existing styles) ... */
+
+    /* Video styles */
+    #myVideo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ... (existing styles) ... */
+  </style>
+</head>
+<body>
+
+<!-- Video Section -->
+<video id="myVideo" autoplay controls>
+  <source src="img/rick.mp4" type="video/mp4">
+  <source src="img/rick.ogg" type="video/ogg">
+</video>
+
+<!-- Fixed h1 -->
+<h1 class="fixed-h1">Your fixed heading text</h1>
+
+<!-- Rest of your HTML content -->
+
+<!-- Bootstrap and other scripts here -->
+</body>
+</head>
